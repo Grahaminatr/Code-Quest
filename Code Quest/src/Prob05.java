@@ -1,13 +1,13 @@
 import java.util.*;
 import java.io.*;
 
-
 public class Prob05 {
 
 	public static void main(String[] args) throws IOException 
 	{
 	Scanner file = new Scanner( new File("Prob05.in.txt"));
-	
+	int all = 0; 
+	int[] Array = new int[13];
 	while(file.hasNext())
 	{
 		String bookId = file.nextLine();
@@ -17,9 +17,7 @@ public class Prob05 {
 			bookId = bookId.replaceAll("-","");
 		}
 		
-		int[] Array = new int[13];
-		int counter = 0; 
-		
+		int counter = 0;
 		for(int i = 0; i < bookId.length(); i++)
 		{
 			String nappa = bookId.substring(i, i+1);
@@ -28,8 +26,6 @@ public class Prob05 {
 			counter++;
 		}
 		
-		int all = 0; 
-		
 		for(int i = 0; i < Array.length; i++)
 		{
 			if(i%2==0|| i ==0)
@@ -37,10 +33,11 @@ public class Prob05 {
 				all+= Array[i]*1;
 			}
 			else
+			{
 				all+=Array[i]*3;
+			}
 		}
 		
-
 		if(all%10==0)
 		{
 			System.out.println("VALID");
@@ -51,10 +48,6 @@ public class Prob05 {
 			int necesary = 10-last;
 			System.out.println(Array[Array.length-1]+necesary);
 		}
-		
 		}
-			
-		
 	}
-
 }
