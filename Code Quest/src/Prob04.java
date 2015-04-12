@@ -20,10 +20,10 @@ public class Prob04
 
 				for (int y = 0; y < original.length -3; y++)
 					{
+					
 					if (first == 'a' || first == 'e'|| first == 'i'|| first == 'o'|| first == 'u')
-
 						{
-						 
+						
 						}
 
 					else
@@ -31,12 +31,15 @@ public class Prob04
 						counter++;
 						}
 					}
+				
 				if (counter < 2)
 					{
+					
 					if (first == 'a' || first == 'e'|| first == 'i'|| first == 'o'|| first == 'u')
 						{
 						System.out.print(word + "yay ");
 						} 
+					
 					else
 						{
 						System.out.print(word.substring(1,word.length()) + word.substring(0, 1) + "ay ");
