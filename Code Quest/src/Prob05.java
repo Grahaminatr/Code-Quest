@@ -10,8 +10,7 @@ public class Prob05 {
 	int[] Array = new int[13];
 	while(file.hasNext())
 	{
-		String bookId = file.nextLine();
-		int x = 0;
+		String bookId = file.nextLine(); 
 		if(bookId.contains("-"))
 		{
 			bookId = bookId.replaceAll("-","");
