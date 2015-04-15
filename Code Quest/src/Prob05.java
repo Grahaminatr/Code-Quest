@@ -40,7 +40,7 @@ public class Prob05 {
 		
 		if(all%10==0)
 		{
-			System.out.println("VALID");
+			System.out.println("valid");
 		}
 		else
 		{
