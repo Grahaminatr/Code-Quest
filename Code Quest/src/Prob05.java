@@ -23,7 +23,7 @@ public class Prob05 {
 			String nappa = bookId.substring(i, i+1);
 			int goku = Integer.parseInt(nappa);
 			Array[counter] = goku;
-			counter++;
+			counter++; 
 		}
 		
 		for(int i = 0; i < Array.length; i++)

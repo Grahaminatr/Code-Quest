@@ -23,7 +23,7 @@ public class Prob04
 					
 					if (first == 'a' || first == 'e'|| first == 'i'|| first == 'o'|| first == 'u')
 						{
-						
+						 break;
 						}
 
 					else

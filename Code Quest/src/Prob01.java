@@ -20,7 +20,7 @@ public class Prob01
 	    	   {
 	    	   System.out.println("CODE");
 	    	   }
-	       else if(nappa%7==0)
+	       else if(nappa%7==0) 
 	    	   {
 	    	   System.out.println("QUEST");
 	    	   }
